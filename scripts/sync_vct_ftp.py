@@ -25,7 +25,7 @@ load_dotenv(os.path.join(BASE_DIR, '.env'))
 
 INVENTORY_URL = 'https://vctwheels.com/inventory-database/'
 AUTH_URL      = 'https://vctwheels.com/wp-login.php?action=postpass'
-PASSWORD      = 'slickride'
+PASSWORD      = os.environ.get('VCT_PASSWORD')
 
 WBR_FTP_HOST = os.environ.get('FTP_HOST')
 WBR_FTP_USER = os.environ.get('FTP_USER')

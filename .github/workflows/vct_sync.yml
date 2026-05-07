@@ -28,4 +28,5 @@ jobs:
           FTP_HOST: ${{ secrets.FTP_HOST }}
           FTP_USER: ${{ secrets.FTP_USER }}
           FTP_PASS: ${{ secrets.FTP_PASS }}
+          VCT_PASSWORD: ${{ secrets.VCT_PASSWORD }}
         run: python scripts/sync_vct_ftp.py
